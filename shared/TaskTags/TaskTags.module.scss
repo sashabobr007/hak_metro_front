@@ -1,0 +1,16 @@
+.task-tag {
+  padding: 7px 12px;
+  border-radius: 9999px;
+
+  &.green {
+    background: #eafad5;
+  }
+
+  &.red {
+    background: #ffe3d9;
+  }
+
+  &.orange {
+    background: #fff1d9;
+  }
+}

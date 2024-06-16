@@ -1,0 +1,82 @@
+@import '@src/styles/common-variables.scss';
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  transition: all 0.1s ease-in;
+
+  &__hidden {
+    transition: all 0.1s ease-in;
+    opacity: 0;
+  }
+}
+
+.container {
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  background-color: #fffefe;
+  border-radius: 20px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-bottom: 0;
+  height: 550px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px rgb(196, 196, 196);
+
+  .messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+
+    overflow-y: scroll;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .form {
+    position: relative;
+
+    &__input {
+      textarea {
+        height: 60px;
+        padding: 10px 40px 10px 15px;
+        border-radius: $common-borderRadius;
+        resize: none;
+      }
+
+      input {
+        padding: 10px 40px 10px 15px;
+        border-radius: 0 0 $common-borderRadius $common-borderRadius;
+        border: none;
+        border-top: 1px solid #ccc;
+      }
+    }
+
+    &__button {
+      position: absolute;
+      right: 5px;
+      bottom: 6px;
+
+      button {
+        border: none;
+      }
+
+      &-icon {
+        font-size: 40px;
+      }
+    }
+
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import '@src/styles/common-variables.scss';
+
+.message {
+  display: flex;
+  max-width: 200px;
+  padding: 0 20px 0 10px;
+  height: auto;
+}
+
+.message__user {
+  padding-left: 20px;
+  &-date {
+    padding-block: 5px;
+    font-size: $date-size;
+    text-align: right;
+  }
+
+  &-text {
+    height: auto;
+    line-height: 1.6;
+    line-break: auto;
+    padding: 12px;
+    border-radius: 15px 0px 15px 15px;
+    background: $user-color;
+    color: $chat-text;
+  }
+}
+
+.message__bot {
+  padding-right: 20px;
+  &-date {
+    padding-block: 5px;
+    font-size: $date-size;
+    text-align: left;
+  }
+
+  &-text {
+    padding: 12px;
+    line-break: auto;
+    border-radius: 0 15px 15px 15px;
+    background: $bot-color;
+    color: $chat-text;
+    text-align: left;
+  }
+}

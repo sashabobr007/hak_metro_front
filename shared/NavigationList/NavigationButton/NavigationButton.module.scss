@@ -1,0 +1,29 @@
+.container {
+  width: 380px;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px #eee;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    border-color: #2f80ed;
+
+    .title {
+      color: #2f80ed;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    color: #b2b2b2;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+}

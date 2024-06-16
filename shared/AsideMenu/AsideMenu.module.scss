@@ -1,0 +1,55 @@
+.nav-panel {
+  background: #fefdfd;
+  overflow-y: hidden;
+
+  @media (max-width: 1025px) {
+    display: none;
+  }
+
+  &__menu {
+    position: relative;
+    height: 100%;
+
+    background-color: #fefdfd;
+
+    li {
+      span {
+        color: #6b7280;
+      }
+    }
+  }
+
+  &__collapse-button {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    font-size: 16px;
+  }
+}
+
+.nav-panel__logo {
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 40px;
+  margin: 40px 0;
+
+  &-collapsed {
+    @extend .nav-panel__logo;
+    padding-inline: 20px;
+  }
+}
+
+.ant-menu-item-selected {
+  background-color: transparent !important;
+
+  span {
+    color: rgb(0, 120, 255) !important;
+  }
+
+  svg {
+    path {
+      stroke: rgb(0, 120, 255);
+    }
+  }
+}

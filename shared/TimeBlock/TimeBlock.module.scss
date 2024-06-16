@@ -1,0 +1,31 @@
+.title-in {
+  position: absolute;
+  left: 100px;
+  top: 90px;
+  text-align: center;
+
+  &__text {
+    width: 100px;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 40px;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      margin-left: 5px;
+      color: #bbb;
+    }
+  }
+}
+
+.lines-container {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
