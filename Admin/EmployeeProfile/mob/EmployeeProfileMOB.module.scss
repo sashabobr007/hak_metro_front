@@ -1,0 +1,14 @@
+.container {
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.work-schedule {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  margin-block: 30px;
+}

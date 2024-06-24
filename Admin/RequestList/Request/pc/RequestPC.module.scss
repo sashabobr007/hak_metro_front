@@ -1,0 +1,9 @@
+.ant-modal-content {
+  padding: 40px !important;
+}
+
+.container {
+  @media (max-width: 1025px) {
+    display: none;
+  }
+}

@@ -17,6 +17,7 @@ export enum SpecialistUrlEnum {
   requestList = '/request-list',
   request = '/request-list/:id',
   analitics = '/analitics',
+  datalens = 'datalens',
 }
 
 export enum EmployeeUrlEnum {
@@ -27,7 +28,6 @@ export enum EmployeeUrlEnum {
   analytics = '/analytics',
   feedback = '/feedback',
   scheduleMenu = '/schedule-menu',
-  profile = '/profile',
 }
 
 export enum OperatorUrlEnum {
@@ -38,6 +38,7 @@ export enum OperatorUrlEnum {
   requestList = '/request-list',
   request = '/request-list/:id',
   analytics = '/analytics',
+  datalens = 'datalens',
 }
 
 export enum AdminUrlEnum {
@@ -50,10 +51,11 @@ export enum AdminUrlEnum {
   employeeProfile = '/employee-profile/:id',
   addEmployee = '/add-employee',
   request = '/request-list/:id',
+  datalens = 'datalens',
 }
 
-enum StatusEnum {
-  recieved = 'Принята',
+export enum StatusEnum {
+  notApproved = 'Не подтверждена',
   work = 'В работе',
   finished = 'Заявка закончена',
   canceled = 'Отмена',
@@ -62,7 +64,7 @@ enum StatusEnum {
 }
 
 export const statusCode = [
-  { text: StatusEnum.recieved, color: '#aaa' },
+  { text: StatusEnum.notApproved, color: '#aaa' },
   { text: StatusEnum.work, color: '#2F80ED' },
   { text: StatusEnum.finished, color: '#09C856' },
   { text: StatusEnum.canceled, color: '#CA0408' },

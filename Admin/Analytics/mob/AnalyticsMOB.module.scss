@@ -1,0 +1,28 @@
+.container {
+  display: none;
+
+  @media (max-width: 1025px) {
+    display: block;
+  }
+}
+
+.task-tag {
+  padding: 7px 20px;
+  border-radius: 9999px;
+
+  &.green {
+    background: #eafad5;
+  }
+
+  &.red {
+    background: #ffe3d9;
+  }
+
+  &.orange {
+    background: #fff1d9;
+  }
+}
+
+b {
+  font-weight: 600;
+}

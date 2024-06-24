@@ -1,0 +1,88 @@
+.container {
+  @media (max-width: 1025px) {
+    display: none;
+  }
+}
+
+.bio {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 90px;
+
+  h1 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #2f80ed;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    width: 258px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 25px rgba($color: #2f80ed, $alpha: 0.2);
+    margin-bottom: 40px;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &-item {
+      .title {
+        display: block;
+        color: #939393;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      .value {
+        font-weight: 500;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.deal__data {
+  max-width: 520px;
+  display: flex;
+
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.schedule-container {
+  max-width: 760px;
+  padding: 30px;
+  padding-left: 60px;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 10px #eee;
+  border-radius: 12px;
+
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h1 {
+      font-size: 20px;
+      font-weight: 300;
+      color: #2f80ed;
+    }
+
+    &__item {
+      .title {
+        display: block;
+        color: #939393;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      .value {
+        font-weight: 500;
+        font-size: 17px;
+      }
+    }
+  }
+}

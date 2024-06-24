@@ -34,6 +34,23 @@ class Api {
     return await response.json();
   }
 
+  async sendWithParams<T>(
+    endpoint: endpointEnum,
+    params: Record<string, string>,
+  ): Promise<T> {
+    const queryParams = new URLSearchParams(params);
+    const response = await fetch(
+      `${this.baseURL}/${endpoint}?${queryParams.toString()}`,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      },
+    );
+    return await response.json();
+  }
+
   async change<T>(
     endpoint: endpointEnum,
     params: Record<string, string>,
@@ -68,6 +85,19 @@ class Api {
     link.click();
 
     document.body.removeChild(link);
+  }
+
+  async delete<T>(endpoint: endpointEnum, id_bid: string): Promise<T> {
+    const response = await fetch(`${this.baseURL}/${endpoint}/?id_bid=${id_bid}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (!response.ok) {
+      throw new Error('Failed to delete resource');
+    }
+    return await response.json();
   }
 }
 

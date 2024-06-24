@@ -1,0 +1,35 @@
+.container {
+  &:hover {
+    cursor: pointer;
+
+    .title {
+      color: #5498ff;
+    }
+
+    .arrow {
+      color: #5498ff;
+    }
+
+    .divider {
+      background: #5498ff;
+    }
+  }
+
+  .title {
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+  }
+
+  .arrow {
+    transition: all 0.2s ease-in-out;
+    color: #ccc;
+    margin-left: 40px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+
+  .divider {
+    transition: all 0.2s ease-in-out;
+  }
+}
